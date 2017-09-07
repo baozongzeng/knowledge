@@ -1,1 +1,14 @@
-location.replace(location.href);
+	1.location.replace(location.href);被replace的页面每次都在服务端重新生成。
+	
+	2.loaction.reload();从客户端缓存里取当前页
+
+	3.history.go(0);
+
+	4.返回并刷新页面：
+
+		location.replace(document.referrer);
+		document.referrer //前一个页面的URL
+
+		不要用 history.go(-1)，或 history.back();来返回并刷新页面，这两种方法不会刷新页面。
+
+	网址：http://www.jb51.net/article/14397.htm  详细介绍
