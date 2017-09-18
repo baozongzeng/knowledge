@@ -1,1 +1,7 @@
 location.replace(location.href);
+
+ondragstart="return false"   禁止鼠标在网页上拖动
+
+ondragenter 当用户拖曳对象到一个合法拖曳目标时在目标元素上触发
+
+onpaste="return false" 禁止粘贴
