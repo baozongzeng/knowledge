@@ -27,3 +27,10 @@ onpaste="return false" 禁止粘贴
 	-webkit-box-orient:vertival;-webkit-line-clamp:3}
 	5.局部滚动开启弹性滚动：overflow:scroll;-webkit-overflow-scrolling:touch;注：Android不支持原生的弹性滚动，但可以借助第三方
 	库iScroll来实现。
+
+
+有时候，需要通过模拟用户操作，来达到单击的效果。例如在用户进入页面后，就触发click事件，而不需要用户去主动单击。
+
+在JQuery中，可以使用trigger()方法完成模拟操作。例如可以使用下面的代码来触发id为btn的按钮的click事件。
+
+	&:$('#btn').trigger("click");
