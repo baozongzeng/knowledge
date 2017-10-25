@@ -34,3 +34,6 @@ onpaste="return false" 禁止粘贴
 在JQuery中，可以使用trigger()方法完成模拟操作。例如可以使用下面的代码来触发id为btn的按钮的click事件。
 
 	&:$('#btn').trigger("click");
+
+页面文字包括图片变成黑白色（ie不兼容）
+html {overflow-y:scroll;filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(100%);}
